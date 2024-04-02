@@ -22,3 +22,8 @@ bssm_password = "bsm 비밀번호"
 `want_coin_value`: 내가 얼마까지 떨어졌을 때의 가격 (ex 50000원 이하로 떨어졌을 때 구매하고 싶다.)  
 `bssm_id`: bssm id   
 `bssm_password`: bssm_password 
+
+## 실행 
+```python
+python main.py
+```
