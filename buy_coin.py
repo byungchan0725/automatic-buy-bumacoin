@@ -78,6 +78,9 @@ def buy_coin_macro(bssm_id, bssm_password):
         element_text = element.text
         numbers = re.findall(r'\d+', element_text)
         numbers_text = ''.join(numbers)
+        # 테스트를 위해 임시적으로 1주만 설정
+        # ************************************** 
+        numbers_text = 1
 
         # 매수 가능
         buy_coin_element = WebDriverWait(driver, 10).until(
