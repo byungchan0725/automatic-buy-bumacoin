@@ -1,15 +1,18 @@
 import requests
 import time
 
+from datetime import datetime
+
+
 from buy_coin import buy_coin_macro
 
 
 # 이 부분 수정해주세요.
 # ***************************************
 
-want_coin_value = 50000  # 원하는 가격 밑으로 적어주셈 (ex 5만원 이하로 떨어졌을때 산다.)
-bssm_id = "bsm 아이디"  # bsm id 적어주셈
-bssm_password = "bsm 비밀번호"  # bsm password 적어주셈
+want_coin_value = 1000000  # 원하는 가격 밑으로 적어주셈 (ex 5만원 이하로 떨어졌을때 산다.)
+bssm_id = "" #bsm id 적어주셈
+bssm_password = ""  # bsm password 적어주셈
 
 # ***************************************
 
@@ -29,6 +32,8 @@ def get_coin_price():
         global price
         json_data = response.json()
         price = json_data["price"]
+        now = datetime.now()
+        print(f"현재 시간: {now}, 현재 코인 가격: {price}")
     else:
         print('Failed to retrieve the page. Status code:', response.status_code)
 
