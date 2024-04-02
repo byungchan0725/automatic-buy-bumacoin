@@ -13,6 +13,9 @@ bssm_password = "bsm 비밀번호"  # bsm password 적어주셈
 
 # ***************************************
 
+price = 0
+
+
 def res():
     time.sleep(180)
 
@@ -23,12 +26,9 @@ def get_coin_price():
     response = requests.get(url)
 
     if response.status_code == 200:
+        global price
         json_data = response.json()
         price = json_data["price"]
-
-        if price <= want_coin_value:
-            buy_coin_macro(bssm_id, bssm_password)
-
     else:
         print('Failed to retrieve the page. Status code:', response.status_code)
 
@@ -36,7 +36,11 @@ def get_coin_price():
 def main():
     while True:
         get_coin_price()
-        res()
+
+        if price <= want_coin_value:
+            buy_coin_macro(bssm_id, bssm_password)
+        else:
+            res()
 
 
 if __name__ == "__main__":
