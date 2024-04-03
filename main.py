@@ -9,8 +9,8 @@ from sell_coins import sell_coin_macro
 
 want_coin_value_for_buy = 1000000  # 원하는 가격 밑으로 적어주셈 (ex 5만원 이하로 떨어졌을때 산다.)
 want_coin_value_for_sell = 2000000 # 원하는 가격 위로 (ex 200만원 위로 올라가면 팔꺼임)
-bssm_id = "rlaqudcks" #bsm id 적어주셈
-bssm_password = "rlaqudcks"  # bsm password 적어주셈
+bssm_id = "" #bsm id 적어주셈
+bssm_password = ""  # bsm password 적어주셈
 
 price = 0
 
