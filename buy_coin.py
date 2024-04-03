@@ -108,9 +108,5 @@ def buy_coin_macro(bssm_id, bssm_password):
         delay_time()
 
     finally:
-        print("프로그램이 종료되었습니다.")
-        exit()
+        print("성공적으로 매수 하였습니다.")
 
-
-if __name__ == "__main__":
-    buy_coin_macro()

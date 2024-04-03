@@ -117,10 +117,4 @@ def sell_coin_macro(bssm_id, bssm_password):
         delay_time()
 
     finally:
-        time.sleep(1000)
-        print("프로그램이 종료되었습니다.")
-        exit()
-
-
-if __name__ == "__main__":
-    buy_coin_macro()
+        print("성공적으로 매도 하였습니다.")
