@@ -3,27 +3,20 @@
 
 <br>
 
-# 사용 방법 
+# 사용 방법
+## 0. 라이브러리 다운로드 
 ```python
 pip install -r requirements.txt 
 ```
-을 하여 버전에 맞게 라이브러리를 다운로드 하여줌. 
 
-<br>
 
-## 개인 정보 수정 
+## 1. 사용 방법 
 ```
-want_coin_value = 50000  
-bssm_id = "bsm 아이디"  
-bssm_password = "bsm 비밀번호" 
-```
-`main.py`에 있는 개인 정보를 수정해주세요.    
+부마위키 아이디 입력: <자신의 아이디 입력>
 
-`want_coin_value`: 내가 얼마까지 떨어졌을 때의 가격 (ex 50000원 이하로 떨어졌을 때 구매하고 싶다.)  
-`bssm_id`: bssm id   
-`bssm_password`: bssm_password 
+부마위키 비밀번호 입력: <자신의 비밀번호 입력>
 
-## 실행 
-```python
-python main.py
+원하는 매수 가격 아래로: <ex 5만원 이하일 때 매수한다 -> 50000>
+
+원하는 매도 가격 위로: <ex 200만원 이상일 때 매도한다 -> 2000000>
 ```
