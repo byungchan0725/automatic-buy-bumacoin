@@ -11,6 +11,10 @@ pip install -r requirements.txt
 
 
 ## 1. 사용 방법 
+```python
+python main.py
+```
+
 ```
 부마위키 아이디 입력: <자신의 아이디 입력>
 
