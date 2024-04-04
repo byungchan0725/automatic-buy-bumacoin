@@ -3,8 +3,8 @@ import json
 
 # 로그인 정보
 login_data = {
-    "id": "",
-    "pw": ""
+    "id": "rlaqudcks",
+    "pw": "rlaqudcks"
 }
 
 bsm_login_url = "https://auth.bssm.kro.kr/api/auth/login"
@@ -70,6 +70,8 @@ def token():
     text = response_auth.text
 
     result = text[45:77]
+
+
 
     # 토큰 요청
     url = 'https://buma.wiki/api/auth/oauth/bsm'
